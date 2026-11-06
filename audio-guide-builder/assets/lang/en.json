@@ -1,0 +1,51 @@
+{
+  "code": "en",
+  "display": "English",
+  "html_lang": "en",
+  "split": {
+    "mode": "space",
+    "terminators": ".!?…",
+    "closers": "\"'”’)]",
+    "join_lines": " ",
+    "abbr": ["Mr", "Mrs", "Ms", "Mx", "Dr", "St", "Sts", "Sr", "Jr", "Prof", "Gen", "Col", "Lt", "Capt", "Sgt", "Rev", "Hon",
+             "Mt", "Ft", "vs", "c", "ca", "cf", "no", "nos", "fig", "figs", "ed", "eds", "vol", "pp", "p", "ff", "viz",
+             "approx", "est", "esp", "incl", "dept", "e.g", "i.e", "a.m", "p.m", "u.s", "u.k", "b.c", "a.d", "b.c.e", "c.e"]
+  },
+  "sentence_end": ".",
+  "ordinal_sep": ": ",
+  "ordinals": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth"],
+  "cps": 15,
+  "norm": [
+    {"re": "(\\d)\\s*[–—]\\s*(\\d)", "to": "$1 to $2"},
+    {"re": "\\s*[—–]\\s*", "to": ", "},
+    {"re": "(\\d)\\s*[×x]\\s*(\\d)", "to": "$1 by $2"},
+    {"re": "\\b(?:c|ca)\\.\\s*(?=\\d)", "to": "circa ", "flags": "i"},
+    {"re": "(\\d)\\s*cm\\b", "to": "$1 centimetres"},
+    {"re": "(\\d)\\s*mm\\b", "to": "$1 millimetres"},
+    {"re": "(\\d)\\s*km\\b", "to": "$1 kilometres"},
+    {"re": "(\\d)\\s*m\\b", "to": "$1 metres"},
+    {"re": "\\bvs\\.", "to": "versus", "flags": "i"},
+    {"re": "\\be\\.g\\.", "to": "for example", "flags": "i"},
+    {"re": "\\bi\\.e\\.", "to": "that is", "flags": "i"},
+    {"re": "[·•]", "to": " "},
+    {"re": "\\s{2,}", "to": " "}
+  ],
+  "voice": {
+    "lang_re": "^en",
+    "locales": ["en-US", "en-GB"],
+    "name_re": "english",
+    "good_re": "natural|neural|premium|enhanced|google|samantha|daniel|serena|karen|aria|jenny|guy|sonia|ryan"
+  },
+  "edge_voices": [
+    {"name": "en-US-AriaNeural", "note": "female, warm and clear"},
+    {"name": "en-US-GuyNeural", "note": "male, steady"},
+    {"name": "en-GB-SoniaNeural", "note": "female, British"},
+    {"name": "en-GB-RyanNeural", "note": "male, British"}
+  ],
+  "css": {"--lh": "1.7", "--h1-track": ".01em", "--caps": "uppercase", "--label-track": ".12em"},
+  "fonts": {
+    "google": "family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif:wght@400;600&display=swap",
+    "serif": "\"Noto Serif\",\"Iowan Old Style\",Georgia,\"Times New Roman\",serif",
+    "italic": "\"Cormorant Garamond\",\"Iowan Old Style\",Georgia,serif"
+  }
+}

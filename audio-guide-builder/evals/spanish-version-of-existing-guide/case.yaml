@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: spanish-version-of-existing-guide
+expected_outcome: |
+  The assistant copies the project into a new folder instead of editing the English one, sets language to es (and a
+  Spanish Edge voice such as es-ES-ElviraNeural), creates a project ui.es.json translated from the English UI strings
+  (keeping the {placeholders}), adds a lang block with Spanish ordinals, abbreviations and number-range rules, translates
+  the content keeping ids, ord, group structure and @src lines, and builds it. The original guide.json and content are
+  untouched.
+context:
+  scaffold_script: place-files.sh

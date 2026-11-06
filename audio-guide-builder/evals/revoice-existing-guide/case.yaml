@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: revoice-existing-guide
+expected_outcome: |
+  The assistant recognises an existing project (guide.json present), does not rerun the full interview, lists real
+  British male voices, auditions them with short clips (or at least proposes to) rather than silently picking one,
+  updates guide.json voice.name to an en-GB male voice, re-records, rebuilds, and runs check_units.py successfully. The
+  new mp3 files carry the new voice tag in their names. Narration text and sources are unchanged.
+context:
+  scaffold_script: place-files.sh

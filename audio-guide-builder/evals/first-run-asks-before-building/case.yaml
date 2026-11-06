@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: first-run-asks-before-building
+expected_outcome: |
+  The assistant treats this as a new project and runs the interview before any research, writing or recording:
+  it asks about narration language, how much of the museum to cover, depth layers and voice (ideally with structured
+  multiple-choice questions, a recommended option first, and a "use defaults" way out), mentions that the Edge voice
+  engine sends text to Microsoft, and proposes saving the answers in guide.json. It does not start recording audio or
+  publish anything in this turn.

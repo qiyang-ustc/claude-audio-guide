@@ -1,0 +1,24 @@
+{
+  "_comment": "Generic template for CJK languages without their own file (ja, ko, yue). Copy into the project's guide.json 'lang' block and fix display, html_lang, ordinals, voice prefix, cps and the fonts. See references/languages.md.",
+  "code": "cjk",
+  "display": "generic",
+  "html_lang": "ja",
+  "split": {"mode": "cjk", "terminators": "。！？", "closers": "”’」』）", "join_lines": ""},
+  "sentence_end": "。",
+  "ordinal_sep": "、",
+  "ordinals": ["1", "2", "3", "4", "5", "6", "7", "8"],
+  "cps": 6,
+  "norm": [
+    {"re": "[·\\s]", "to": ""},
+    {"re": "[「」『』“”]", "to": ""},
+    {"re": "[—–]", "to": "、"}
+  ],
+  "voice": {"lang_re": "", "locales": [], "name_re": "", "good_re": "natural|neural|premium|enhanced|google"},
+  "edge_voices": [],
+  "css": {"--lh": "1.9", "--h1-track": ".08em", "--caps": "none", "--label-track": ".15em"},
+  "fonts": {
+    "google": "family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+JP:wght@400;600&display=swap",
+    "serif": "\"Noto Serif JP\",\"Hiragino Mincho ProN\",\"Yu Mincho\",serif",
+    "italic": "\"Cormorant Garamond\",\"Iowan Old Style\",Georgia,serif"
+  }
+}

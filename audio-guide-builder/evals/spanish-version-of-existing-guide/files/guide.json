@@ -1,0 +1,37 @@
+{
+  "id": "sample-ponte-vecchio",
+  "title": "Ponte Vecchio, Briefly",
+  "eyebrow": "Firenze",
+  "lede": "A three-stop sample that shows the format. Replace every word of it with your own subject.",
+  "language": "en",
+  "voice": {"engine": "edge", "name": "en-US-AriaNeural", "rate": "+0%"},
+  "pigments": ["Gesso", "Terre verte", "Vermilion", "Ultramarine", "Gold leaf"],
+  "sites": [
+    {
+      "id": "bridge",
+      "name": "The Bridge",
+      "native": "Ponte Vecchio",
+      "kind": "Bridge",
+      "when": "Evening walk",
+      "mark": "Pv",
+      "blurb": "The medieval bridge over the Arno, and the shops that were built along it.",
+      "note": "A sample note line: practical tips for this place go here.",
+      "labels": ["Date", "Type", "Detail", "Where"],
+      "row_meta": ["date"],
+      "foot": "",
+      "links": []
+    },
+    {
+      "id": "details",
+      "name": "Small Details",
+      "native": "",
+      "kind": "Curiosities",
+      "when": "",
+      "mark": "Sd",
+      "blurb": "One small thing you can see on the bridge today.",
+      "note": "",
+      "row_meta": ["date"],
+      "links": []
+    }
+  ]
+}

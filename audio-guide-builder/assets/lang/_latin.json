@@ -1,0 +1,31 @@
+{
+  "_comment": "Generic template for any space-delimited language without its own file (es, fr, de, it, pt, nl, ...). Claude should copy this into the project's guide.json 'lang' block and fix: display, html_lang, ordinals, the numeric-range word in norm, common abbreviations, and the voice prefix. See references/languages.md.",
+  "code": "latin",
+  "display": "generic",
+  "html_lang": "en",
+  "split": {
+    "mode": "space",
+    "terminators": ".!?…",
+    "closers": "\"'”’)]»",
+    "join_lines": " ",
+    "abbr": ["Mr", "Mrs", "Dr", "St", "Sr", "Sra", "Jr", "Prof", "Mt", "vs", "c", "ca", "cf", "no", "nos", "fig", "ed", "vol", "pp", "p", "ff",
+             "approx", "etc", "e.g", "i.e", "a.m", "p.m", "u.s", "b.c", "a.d"]
+  },
+  "sentence_end": ".",
+  "ordinal_sep": ": ",
+  "ordinals": ["1", "2", "3", "4", "5", "6", "7", "8"],
+  "cps": 15,
+  "norm": [
+    {"re": "\\s*[—–]\\s*", "to": ", "},
+    {"re": "[·•]", "to": " "},
+    {"re": "\\s{2,}", "to": " "}
+  ],
+  "voice": {"lang_re": "", "locales": [], "name_re": "", "good_re": "natural|neural|premium|enhanced|google"},
+  "edge_voices": [],
+  "css": {"--lh": "1.7", "--h1-track": ".01em", "--caps": "uppercase", "--label-track": ".12em"},
+  "fonts": {
+    "google": "family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif:wght@400;600&display=swap",
+    "serif": "\"Noto Serif\",\"Iowan Old Style\",Georgia,\"Times New Roman\",serif",
+    "italic": "\"Cormorant Garamond\",\"Iowan Old Style\",Georgia,serif"
+  }
+}

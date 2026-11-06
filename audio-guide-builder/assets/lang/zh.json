@@ -1,0 +1,38 @@
+{
+  "code": "zh",
+  "display": "中文",
+  "html_lang": "zh-Hans",
+  "split": {"mode": "cjk", "terminators": "。！？", "closers": "”’」』）", "join_lines": ""},
+  "sentence_end": "。",
+  "ordinal_sep": "，",
+  "ordinals": ["第一", "第二", "第三", "第四", "第五", "第六", "第七", "第八"],
+  "cps": 4.3,
+  "norm": [
+    {"re": "[（(][^）)]*[A-Za-z][^）)]*[）)]", "to": ""},
+    {"re": "[·\\s]", "to": ""},
+    {"re": "[“”「」『』]", "to": ""},
+    {"re": "(\\d)[—–](\\d)", "to": "$1到$2"},
+    {"re": "×", "to": "乘"},
+    {"re": "[—：；、]", "to": "，"},
+    {"re": "[《》]", "to": ""},
+    {"re": "[（）]", "to": "，"}
+  ],
+  "voice": {
+    "lang_re": "^zh|^cmn",
+    "locales": ["zh-CN", "cmn-Hans"],
+    "name_re": "chinese|中文|普通话|國語|国语|粤语",
+    "good_re": "natural|neural|premium|enhanced|xiaoxiao|xiaoyi|yunxi|yunyang|tingting|ting-ting|meijia|li-mu|lilian|google"
+  },
+  "edge_voices": [
+    {"name": "zh-CN-XiaoxiaoNeural", "note": "female, warm and natural (the default)"},
+    {"name": "zh-CN-YunyangNeural", "note": "male, newsreader tone"},
+    {"name": "zh-CN-YunxiNeural", "note": "male, young and relaxed"},
+    {"name": "zh-CN-XiaoyiNeural", "note": "female, lively"}
+  ],
+  "css": {"--lh": "1.9", "--h1-track": ".1em", "--caps": "none", "--label-track": ".2em"},
+  "fonts": {
+    "google": "family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+SC:wght@400;600&display=swap",
+    "serif": "\"Noto Serif SC\",\"Songti SC\",\"Source Han Serif SC\",\"Noto Serif CJK SC\",STSong,serif",
+    "italic": "\"Cormorant Garamond\",\"Iowan Old Style\",Georgia,serif"
+  }
+}
